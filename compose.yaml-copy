@@ -1,6 +1,12 @@
 services:
-  app:
+  docker1:
     build:
-      context: .
+      context: ./docker1
       dockerfile: Dockerfile
-    image: docker1:latest
+    image: dockergroup/docker1:latest
+
+  pyscript2:
+    build:
+      context: ./pyscript2
+      dockerfile: Dockerfile
+    image: dockergroup/pyscript2:latest
